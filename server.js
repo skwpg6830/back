@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'https://skwpg6830.github.io', // 替換為你的前端應用的地址
+  origin: 'http://localhost:5173', // 替換為你的前端應用的地址
   optionsSuccessStatus: 200,
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // 允許的HTTP方法
     allowedHeaders: ['Content-Type', 'Authorization'], // 允許請求
