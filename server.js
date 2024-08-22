@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: [process.env.CORS_ORIGIN, 'http://localhost:5173'],
+ origin: [process.env.CORS_ORIGIN, 'http://localhost:5173'],
   optionsSuccessStatus: 200,
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // 允許的HTTP方法
     allowedHeaders: ['Content-Type', 'Authorization'], // 允許請求
