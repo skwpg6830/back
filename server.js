@@ -60,7 +60,7 @@ app.use('/uploads', express.static('public/uploads'));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // 連接到 MongoDB
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(dbUrl)
   .then(() => {
     console.log('成功連接到 MongoDB');
   })
